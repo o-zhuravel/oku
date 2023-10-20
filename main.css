@@ -1,0 +1,376 @@
+@font-face {
+    font-family: "Roboto_Regular";
+    src: url("Fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter_Regular";
+    src: url("Fonts/Inter/static/Inter-Regular.ttf");
+}
+
+* {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1920px;
+}
+
+               /*HEADER*/
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+}
+
+header .header-container {
+    max-width: 96%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto minmax(300px, auto) auto;
+}
+
+header .header-container img:hover {
+
+}
+
+
+
+header .header-container .menu {
+  justify-self: center;
+
+}
+
+header .header-container a {
+    text-decoration: none;
+    color: #131314;
+    font-family: Inter_Regular;
+    padding: 10px 20px;
+}
+
+header .header-container a:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
+
+header .header-container .menu a {
+}
+
+header .header-container .sign {
+    justify-self: end;
+}
+
+/*header .header-container .sign a {*/
+/*}*/
+
+                 /*MAIN*/
+                 /*PRESENTATION*/
+
+.presentation {
+    margin: 3% 2% 3% 8%;
+    display: grid;
+    grid-template-columns: minmax(20%, 50%) auto;
+}
+
+.presentation .text {
+    align-self: center;
+}
+
+.presentation .text h1 {
+    max-width: 450px;
+    font-family: Roboto_Regular;
+    font-size: 48px;
+}
+
+.presentation .text .button {
+    max-width: max-content;
+    color: white;
+    background: black;
+    font-family: Inter_Regular;
+    font-size: 15px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin: 2% 0 3% 0;
+
+}
+
+.presentation .text .button:hover {
+    transform: scale(1.5);
+}
+
+.presentation .text .questions {
+    color: #46474E;
+    font-family: Inter_Regular;
+    font-size: 13px;
+}
+
+.presentation .text .questions a {
+    text-decoration: none;
+    font-family: Inter_Regular;
+    font-size: 15px;
+    color: #46474E;
+}
+
+.presentation img {
+    width: 100%;
+}
+
+.presentation .more {
+    grid-column: 1/3;
+    justify-self: center;
+}
+
+               /*ABOUT_LIBRARY*/
+
+.about-library {
+    max-width: 84%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.about-library h2 {
+    text-align: center;
+    font-family: Roboto_Regular;
+    font-size: 36px;
+    padding: 5% 0;
+}
+
+.about-library p {
+    font-family: Inter_Regular;
+    font-size: 16px;
+    color: #46474e;
+}
+
+.rectangle {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-rows: auto auto;
+    background: #F3F4F4;
+    padding: 0 3% 0 3%;
+    align-items: end;
+}
+
+.rectangle img {
+    width: 100%;
+}
+
+.rectangles {
+    background: #F3F4F4;
+    padding: 0 3% 0 3%;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.rectangles img {
+    width: 100%;
+    align-self: end;
+}
+
+.rectangles .image2 {
+    align-self: start;
+}
+
+.rectangles .image {
+    width: 65%;
+    margin: auto;
+}
+
+                    /*COMMENTS*/
+
+.comments {
+    margin: 5% 3% 5% 8%;
+    display: grid;
+    grid-template-columns: 47% auto;
+    grid-gap: 20px;
+}
+
+.comments h2{
+    justify-self: end;
+    text-align: left;
+    align-self: end;
+    font-family: Roboto_Regular;
+    font-size: 36px;
+}
+
+.comments .statistic {
+    text-align: right;
+    font-family: Inter_Regular;
+    font-size: 17px;
+}
+
+.comments .comment {
+    display: grid;
+    grid-template-columns: 50px minmax(100px, auto) 50px;
+    /*grid-template-rows: auto auto auto auto;*/
+    grid-row-gap: 10px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.comments .comment .ava {
+    grid-row: 1/3;
+    align-self: center;
+}
+
+.comments .comment .name {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: end;
+}
+
+.comments .comment .nick {
+    color: #697882;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: start;
+}
+
+.comments .comment .twitter {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    align-self: center;
+}
+
+.comments .comment .comm1 {
+    grid-column: 1/4;
+}
+
+.comments .comment .comm2 {
+    grid-column: 1/4;
+}
+
+.comments .comment .date {
+    grid-column: 1/4;
+    color: #697882;
+}
+
+.comments .comment .second {
+    justify-self: end;
+}
+
+                 /*TEAM*/
+
+.team {
+    margin: 3% auto;
+    max-width: 45%;
+    padding: 10%;
+    border-top: 1px solid grey;
+}
+
+.team h2 {
+    text-align: center;
+    font-family: Roboto_Regular;
+    font-size: 36px;
+    padding-bottom: 5%;
+}
+
+.team p {
+    text-align: center;
+    font-family: Inter_Regular;
+    font-size: 17px;
+    padding-bottom: 5%;
+}
+
+.team .participants {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.team .participants .name-lastname {
+    font-size: 15px;
+}
+
+.team .participants .location {
+    font-size: 13px;
+}
+
+                 /*ENDING*/
+
+.ending {
+    background: linear-gradient(white 10%, #d0cfcf);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.2fr;
+}
+
+.ending h2 {
+    text-align: center;
+    font-family: Roboto_Regular;
+    font-size: 36px;
+    margin: 3% 0;
+}
+
+.ending .oku {
+    text-align: center;
+    font-family: Inter_Regular;
+    font-size: 17px;
+    margin: 3% 0;
+}
+
+.ending .become {
+    text-align: center;
+    font-family: Inter_Regular;
+    font-size: 11px;
+    margin: 3% 0;
+}
+
+.ending .btn {
+    max-width: max-content;
+    text-align: center;
+    font-family: Roboto_Regular;
+    font-size: 15px;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+.ending .btn:hover {
+    color: black;
+    background: white;
+}
+
+.ending .bookLeftBottom {
+    grid-row: 3/4;
+    justify-self: center;
+}
+
+.ending .bookRightTop {
+    grid-column: 3/4;
+    justify-self: center;
+    align-self: end;
+}
+
+.ending .join {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.ending .dogRightBottom {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    justify-self: right;
+}
+
+.ending .footer1 {
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
+}
+
+.ending .footer2 {
+    grid-row: 4/5;
+    grid-column: 3/4;
+    justify-self: center;
+    align-self: center;
+}
+
+.ending a {
+    text-decoration: none;
+    color: #131314;
+}
