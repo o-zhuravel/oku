@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Inter_Regular";
+    src: url("Fonts/Inter/static/Inter-Regular.ttf");
+}
+
+body {
+    background: linear-gradient(rgba(179, 185, 189, 0.8), white 98%, rgba(179, 185, 189, 0.8)) ;
+    font-family: Inter_Regular;
+}
+
+.wrapper {
+    max-width: 1920px;
+    min-height: 95vh;
+    margin: auto;
+    background-image: url("Image/dogRightBottom.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.form {
+    max-width: 50%;
+    margin: auto;
+    padding: 2% 2%;
+
+    display: grid;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    margin: 2% auto ;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+}
+
+.create-btn {
+    justify-self: end;
+    background-color: #1f1f1f;
+    color: #F3F4F4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.create-btn:hover {
+    transform: scale(1.3);
+}
+.dog {
+    justify-self: end;
+}
+
+@media (max-width: 980px) {
+    .wrapper {
+        min-height: 97vh;
+        background-size: 30%;
+    }
+}
+
+@media (max-width: 670px) {
+    .wrapper {
+        background-size: 30%;
+    }
+
+    .form {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        background-size: 40%;
+    }
+
+    .form {
+        max-width: 80%;
+    }
+
+    input {
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create account</title>
+    <link rel="stylesheet" href="main2.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+<div class="wrapper animate__animated animate__fadeInRight">
+    <header>
+        <svg style="width: 50px; height: 100px; display: block">
+            <circle cx="25"
+                    cy="20"
+                    r="10"
+                    stroke="black"
+                    stroke-width="2" fill="black" />
+            <line x1="0" x2="25" y1="20"  y2="50" style="stroke: black; stroke-width: 5"/>
+            <line x1="25" x2="50" y1="50"  y2="20" style="stroke: black; stroke-width: 5"/>
+            <line x1="0" x2="50" y1="50" y2="50" style="stroke: black; stroke-width: 10"/>
+        </svg>
+    </header>
+    <div class="form animate__animated animate__fadeInUp">
+        <h1>Enter your details</h1>
+        <input type="text" placeholder="enter your name">
+        <input type="text" placeholder="enter your nick">
+        <input type="text" placeholder="enter your email address">
+        <input type="text" placeholder="enter your telephone number">
+        <div class="create-btn">Create account</div>
+    </div>
+</div>
+
+<script>
+    let createBtn = document.querySelector(".create-btn");
+    createBtn.addEventListener("click", () => {
+        console.log("hfhf");
+        window.location.href = "index.html";
+    })
+</script>
+</body>
+</html>
